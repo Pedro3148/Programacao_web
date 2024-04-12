@@ -34,7 +34,7 @@ app.get('/dividir/:a/:b', (req, res) => {
     res.send(`${a} / ${b} = ${resultado}`);
 });
 
-
-app.listen(3000, () => {
-    console.log(`Servidor rodando na porta 3000`);
+const PORT = 8080
+app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta ${PORT}`);
 });
